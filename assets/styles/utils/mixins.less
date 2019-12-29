@@ -1,0 +1,60 @@
+.text-upper(@color-theme) {
+    font: @font-size-text-upper/1.2 @font-prime;
+    text-transform: uppercase;
+    color: @color-theme;
+}
+
+.font-text() {
+    font: @font-size-text/1.2 @font-prime;
+    color: @color-text;
+}
+
+.font-button() {
+    font: bold @font-size-text/1.2 @font-prime;
+    color: @color-white;
+}
+
+.input-name(@width-input) {
+    box-sizing: border-box;
+    height: 60px;
+    width: @width-input;
+    border: 2px solid @color-border;
+    border-radius: 1px;
+    padding: 20px;
+    margin: 0;
+    transition: 0.2s;
+    .font-text();
+
+    &::placeholder {
+        color: @color-text;
+    }
+}
+
+.input-contact() {
+    box-sizing: border-box;
+    height: 60px;
+    width: 310px;
+    border: 2px solid @color-border;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    padding: 20px;
+    margin: 0;
+    transition: 0.2s;
+    .font-text();
+
+    &::placeholder {
+        color: @color-text;
+    }
+}
+
+.icon-contact() {
+    width: 62px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 18px 19px;
+    margin: 0;
+    border: 2px solid @color-border;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    background-color: @color-border;
+}
